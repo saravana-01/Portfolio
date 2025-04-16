@@ -1,0 +1,26 @@
+*{
+    background-color: black;
+}
+.image-wrapper-right {
+  width: 190%;
+  height: 100%;
+  /* background-image: url('C:\Users\Admin\Desktop\React\ts\src\Components\InShot_20250416_135216411.png');  */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  
+.logo{
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+.logo:hover{
+    color: yellow;
+    font-size: 100px;
+}
+a{
+    text-decoration: none;
+    
+}
