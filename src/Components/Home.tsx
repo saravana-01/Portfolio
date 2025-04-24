@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Components/Home.css";
 import saravna from "../Components/InShot_20250416_163806423.png";
+interface ViewersName {
+  // onSend: (value: string) => void;
+  namee:string
+}
 
-const Home: React.FC = () => {
+
+const Home = (props:ViewersName) => {
+  const [name, setName] = useState("");
+
+  const go = () => {
+   
+  };
   return (
     <div className="container-fluid">
       <div className="row">
@@ -13,7 +23,15 @@ const Home: React.FC = () => {
         </div>
         <div className="col-md-6">
           <div className="textContent">
-            <h1>Hiiiii!!!!!</h1>
+            <form>
+              <input
+                className="form-control"
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <button className="btn btn-primary">Go</button>
+            </form>
           </div>
           <div className="logos text-center">
             <a
