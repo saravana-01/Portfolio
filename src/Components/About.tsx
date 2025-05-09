@@ -1,17 +1,18 @@
-import React, { useState } from "react";
-import photo2 from "../../src/Photo2.jpg";
-import { useNavigate } from "react-router-dom";
-const Home = () => {
-  const navigate = useNavigate();
-  const [showResume, setShowResume] = useState  <boolean>(false);
-  const resumeUrl: string = "https://drive.google.com/file/d/11xIKtScSZvc_gt8SpqwT0O_k9Asr7sgQ/view?usp=drive_link";
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
+type Props = {}
+
+export default function About({}: Props) {
+    const navigate = useNavigate();
   return (
     <>
+      <>
       <div className="bg-dark text-light"></div>
       <header>
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
           <div className="container-fluid">
-          <button className=" nav-link navbar-brand"  onClick={() => navigate("/")} >SARAVANA PANDIYAN</button>
+            <button className=" nav-link navbar-brand"  onClick={() => navigate("/")} >SARAVANA PANDIYAN</button>
             <button
               className="navbar-toggler"
               type="button"
@@ -54,28 +55,8 @@ const Home = () => {
             </div>
           </div>
         </nav>
-      </header> <div className="p-6 max-w-4xl mx-auto text-center"> 
-    </div>
-
-      <section id="profile" className="container-fluid bg-dark">
-        <div className="row align-items-center">
-          <div className="col-lg-1 d-flex justify-content-center"></div>
-          <div className="col-lg-5 d-flex justify-content-center">
-            <img src={photo2} className="img-fluid pic" />
-          </div>
-          <div className="col-lg-5">
-            <div className="justify-content-center">
-             
-              <h1 className="h1 text-lg-start text-info d-flex text-align-center">
-                Saravana Pandiyan
-              </h1>
-              <p className="text-light h6 fs-5">Frontend Developer</p>
-            </div>
-          </div>
-          <div className="col-lg-1 d-flex justify-content-center"></div>
-        </div>
-      </section>
+      </header>
     </>
-  );
-};
-export default Home;
+    </>
+  )
+}
