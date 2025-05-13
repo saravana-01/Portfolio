@@ -1,18 +1,15 @@
-import React, { useState } from "react";
-import photo2 from "../../src/Photo2.jpg";
-import photo1 from "../../src/photo1.jpg";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-const Home = () => {
+
+type Props = {};
+
+export default function Contacts({}: Props) {
   const navigate = useNavigate();
-  const navigateResume = () => {
-    window.open("../../src/Photo2.jpg");
-  };
   return (
     <>
       <header>
         <nav className=" container p-3 navbar navbar-dark bg-dark navbar-expand-lg">
           <div className="container-fluid">
-
             <button
               className=" nav-link navbar-brand"
               onClick={() => navigate("/")}
@@ -61,49 +58,37 @@ const Home = () => {
             </div>
           </div>
         </nav>
-      </header>{" "}
-      <div className="p-6 max-w-4xl mx-auto text-center"></div>
-      <section id="profile" className="container-fluid ">
-        <div className="row align-items-center">
-          <div className="col-lg-1 d-flex justify-content-center"></div>
-          <div className="col-lg-5 d-flex justify-content-center">
-            <img src={photo2} className=" ms-5 img-fluid pic" />
-          </div>
-          <div className="col-lg-5">
-            <div className="justify-content-center mt-5">
-              <h1 className="h1 text-lg-start text-dark d-flex text-align-center">
-                Saravana Pandiyan
-              </h1>
-              <p
-                style={{ paddingLeft: "83px" }}
-                className="text-secondary text-align-center h6 pt-2 fs-5"
-              >
-                Frontend Developer
-              </p>
-              <div style={{paddingTop:"10px",marginLeft:"80px"}}>
-                <a
-                  type="button"
-                  className="btn btn-outline-dark"
-                  style={{ padding:"10px",borderRadius: "20px" }}
-                  href="https://virtual-cv-nine.vercel.app/"
-                >
-                  Resume
+      </header>
+      <section id="contact">
+        <div className="row">
+          <div className="col-lg-12">
+            <p className="section__text__p1">Get In Touch</p>
+            <h1 className="title">Contact Me</h1>
+            <div className="contact-info-upper-container">
+              <div className="contact-info-container">
+                <img
+                  src="./images/email.png"
+                  alt="Email"
+                  className="icon contact"
+                />
+                <a href="mailto:merinfrango2094@gmail.com" target="_blank">
+                  <p>merinfrango2094@gmail.com</p>
                 </a>
-                <button
-                  type="button"
-                  className="btn btn-dark ms-1 m-2"
-                  style={{ padding:"10px",borderRadius: "20px" }}
-                  onClick={() => navigate("/contact")}
-                >
-                  Contact Info
-                </button>
+              </div>
+              <div className="contact-info-container">
+                <img
+                  src="./images/whatsapp.png"
+                  alt="LikedIn"
+                  className="icon contact"
+                />
+                <a href="" target="_blank">
+                  <p>+917395850859</p>
+                </a>
               </div>
             </div>
           </div>
-          <div className="col-lg-1 d-flex justify-content-center"></div>
         </div>
       </section>
     </>
   );
-};
-export default Home;
+}
