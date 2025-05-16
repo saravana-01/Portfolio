@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <header>
-        <nav className=" container p-3 navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav className=" container-fluid p-3 navbar navbar-dark bg-dark navbar-expand-lg">
           <div className="container-fluid">
 
             <button

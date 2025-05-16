@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  /* font-family:sans-serif; */
 }
 #profile{
   padding: 50px;
@@ -15,4 +16,89 @@
   margin-top: 50px !important;
   margin-left: 130px !important;
  
+}
+
+
+
+/* Logo */
+.logo-container{
+  padding-top: 50px;
+  text-decoration: none;
+}
+.logo-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-text{
+  padding-top: 100px;
+  font-size: 27px;
+}
+.contact-text-h1{
+ 
+  font-size: 60px;
+}
+.fa-envelope,.fa-whatsapp{
+  font-size: 27px;
+}
+.wp,.mail{
+font-size: 25px;
+}
+.fa-linkedin,.fa-github,.fa-instagram,.fa-facebook{
+font-size: 66px;
+ text-decoration: none;
+}
+
+
+/* Logo color  */
+
+.fa-linkedin{
+color: rgb(0, 128, 255);
+}
+.fa-envelope{
+  color: rgb(234, 67, 53);
+}
+.fa-whatsapp{
+  color: rgb(37, 211, 102);
+}
+.fa-facebook{
+color: rgb(59, 89, 152);
+}
+.fa-instagram{
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-github{
+  color: rgb(24, 23, 23);
+}
+
+
+/* logo Hover */
+
+.fa-linkedin:hover{
+  font-size: 76px;
+color: rgb(0, 128, 255);
+}
+.fa-envelope:hover{
+  font-size: 35px;
+  color: rgb(234, 67, 53);
+}
+.fa-whatsapp:hover{
+  font-size: 34px;
+  color: rgb(37, 211, 102);
+}
+.fa-facebook:hover{
+  font-size: 76px;
+color: rgb(59, 89, 152);
+}
+.fa-instagram:hover{
+  font-size: 76px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-github:hover{
+  font-size: 76px;
+  color: rgb(24, 23, 23);
 }
