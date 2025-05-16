@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  
   /* font-family:sans-serif; */
 }
 #profile{
@@ -17,7 +18,11 @@
   margin-left: 130px !important;
  
 }
+/* .contact-info {
+  font-size: 1.25rem; 
+  font-weight: 500; }
 
+ */
 
 
 /* Logo */
@@ -31,7 +36,7 @@
 }
 
 .contact-text{
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 27px;
 }
 .contact-text-h1{
@@ -102,3 +107,34 @@ color: rgb(59, 89, 152);
   font-size: 76px;
   color: rgb(24, 23, 23);
 }
+
+
+/* Card - About page */
+.card{
+  border: 1px #000000 solid;
+  box-shadow: #655757 30px 30px 100px;
+}
+
+/* Media query */
+/* @media (max-width: 767.98px) {
+  .education {
+    text-align: start !important;
+    justify-content: left;
+  }
+  .education .card-body {
+    text-align: start !important;
+  }
+} */
+ @media (max-width: 767.98px) {
+  .card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .card-body {
+    text-align: left !important;
+  }
+}
+

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Nav from "./Nav";
 
 type Props = {};
 
@@ -8,56 +9,7 @@ export default function About({}: Props) {
   return (
     <>
       <header>
-        <nav className="container-fluid p-3 navbar navbar-dark bg-dark navbar-expand-lg">
-          <div className="container-fluid">
-            <button
-              className=" nav-link navbar-brand"
-              onClick={() => navigate("/")}
-            >
-              SARAVANA PANDIYAN
-            </button>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul className="navbar-nav ms-auto ps-5">
-                <li className="nav-item">
-                  <button
-                    className="nav-link"
-                    aria-current="page"
-                    onClick={() => navigate("/about")}
-                  >
-                    About
-                  </button>
-                </li>
-                <li className="nav-item">
-                  <button
-                    className="nav-link"
-                    onClick={() => navigate("/about")}
-                  >
-                    Projects
-                  </button>
-                </li>
-                <li className="nav-item">
-                  <button
-                    className="nav-link"
-                    onClick={() => navigate("/contact")}
-                  >
-                    Contacts
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <Nav/>
       </header>
       <section className="container">
         <div className="column mt-5">
@@ -79,7 +31,7 @@ export default function About({}: Props) {
               </p>
             </div>
           </div>
-          <div className="card  w-75 mb-3 p-3 text-end ms-auto d-flex">
+          <div className="card education w-75 mb-3 p-3 text-end ms-auto d-flex">
             <div className="card-body">
               <h5 className="card-title text-primary h2 p-1">Education</h5>
               <p className="card-text fs-5">
