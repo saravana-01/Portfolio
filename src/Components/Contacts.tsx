@@ -9,7 +9,7 @@ export default function Contacts({}: Props) {
   return (
     <>
       <header>
-      <Nav/>
+        <Nav />
       </header>
       <section id="contact">
         <div className="container">
@@ -21,7 +21,11 @@ export default function Contacts({}: Props) {
 
             <div className="container logo-container">
               <div className="row justify-content-center text-center mt-4">
-                <div className="col-12 col-md-6 mb-3">
+                <div
+                  className="col-12 col-md-6 mb-3"
+                  data-aos="flip-right"
+                  data-aos-duration="2000"
+                >
                   <a
                     className="contact-info d-flex justify-content-center align-items-center"
                     href="mailto:saravanapandiyan0903@gmail.com"
@@ -30,7 +34,11 @@ export default function Contacts({}: Props) {
                     saravanapandiyan0903@gmail.com
                   </a>
                 </div>
-                <div className="col-12 col-md-6 mb-3">
+                <div
+                  className="col-12 col-md-6 mb-3"
+                  data-aos="flip-left"
+                  data-aos-duration="2000"
+                >
                   <a
                     className="contact-info d-flex justify-content-center align-items-center"
                     href="https://wa.me/9384531400"
@@ -46,22 +54,38 @@ export default function Contacts({}: Props) {
               <div className="row justify-content-center text-center mt-4">
                 <div className="col-auto">
                   <a href="https://linkedin.com/in/saravana-pandiyan-083b32277">
-                    <i className="fa-brands fa-linkedin fa-2x"></i>
+                    <i
+                      className="fa-brands fa-linkedin fa-2x"
+                      data-aos="flip-down"
+                      data-aos-duration="500"
+                    ></i>
                   </a>
                 </div>
                 <div className="col-auto">
                   <a href="https://github.com/saravana-01">
-                    <i className="fa-brands fa-github fa-2x"></i>
+                    <i
+                      className="fa-brands fa-github fa-2x"
+                      data-aos="flip-up"
+                      data-aos-duration="1000"
+                    ></i>
                   </a>
                 </div>
                 <div className="col-auto">
                   <a href="https://www.instagram.com/saravanaaaaahhhhh/">
-                    <i className="fa-brands fa-instagram fa-2x"></i>
+                    <i
+                      className="fa-brands fa-instagram fa-2x"
+                      data-aos="flip-up"
+                      data-aos-duration="2000"
+                    ></i>
                   </a>
                 </div>
                 <div className="col-auto">
                   <a href="https://www.facebook.com/saravanaaaaahhhhh">
-                    <i className="fa-brands fa-facebook fa-2x"></i>
+                    <i
+                      className="fa-brands fa-facebook fa-2x"
+                      data-aos="flip-up"
+                      data-aos-duration="3000"
+                    ></i>
                   </a>
                 </div>
               </div>

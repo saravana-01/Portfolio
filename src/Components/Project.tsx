@@ -1,9 +1,14 @@
-import React from "react";
-import Nav from "./Nav";
 
+import Nav from "./Nav";
+import AOS from 'aos';// @ts-ignore
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 type Props = {};
 
 export default function Project({}: Props) {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
     <>
       <header>
@@ -13,7 +18,7 @@ export default function Project({}: Props) {
         <h2 className="mt-3 text-primary">Project Details</h2>
         <div className="row row-cols-1 row-cols-md-3 g-3 mt-3">
           <div className="col">
-            <div className="card h-100">
+            <div className="card h-100" data-aos="zoom-in-right">
               <div className="card-body">
                 <h5 className="card-title text-primary">
                   HR Portal (Leave Management System)
@@ -53,7 +58,7 @@ export default function Project({}: Props) {
             </div>
           </div>
           <div className="col">
-            <div className="card h-100">
+            <div className="card h-100" data-aos="zoom-in">
               <div className="card-body">
                 <h5 className="card-title text-primary">
                   Tours and Travel Package Booking
@@ -93,7 +98,7 @@ export default function Project({}: Props) {
             </div>
           </div>
           <div className="col">
-            <div className="card h-100">
+            <div className="card h-100" data-aos="zoom-in-left">
               <div className="card-body">
                 <h5 className="card-title text-primary">
                   Doctor Appoinment (Bug fixing)

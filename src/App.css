@@ -8,7 +8,8 @@
   padding: 50px;
   height: 150% !important;
   width: 100%;
-  
+  margin-top: 8%;
+  margin-left: 13%;
 }
 .pic{
   height: 96%;
@@ -138,3 +139,37 @@ color: rgb(59, 89, 152);
   }
 }
 
+@media (max-width: 576px) {
+  #profile {
+    padding: 20px;
+    height: auto !important;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #profile {
+    padding: 30px;
+    height: auto !important;
+    margin-top: 8%;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #profile {
+    padding: 40px;
+    height: auto !important;
+    margin-top: 6%;
+    margin-left: 8%;
+  }
+}
+@media (min-width: 1200px) {
+  #profile {
+    padding: 50px;
+    height: 150% !important;
+    margin-top: 8%;
+    margin-left: 13%;
+  }
+}

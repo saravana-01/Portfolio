@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Nav from "./Nav";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type Props = {};
 
 export default function About({}: Props) {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   const navigate = useNavigate();
   return (
     <>
       <header>
-        <Nav/>
+        <Nav />
       </header>
       <section className="container">
         <div className="column mt-5">
-          <div className="card w-75 mb-3 p-3">
+          <div
+            className="card w-75 mb-3 p-3"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <div className="card-body">
               <h5 className="card-title text-primary h2 p-1">Experience</h5>
               <p className="card-text fs-5">
@@ -31,7 +40,11 @@ export default function About({}: Props) {
               </p>
             </div>
           </div>
-          <div className="card education w-75 mb-3 p-3 text-end ms-auto d-flex">
+          <div
+            className="card education w-75 mb-3 p-3 text-end ms-auto d-flex"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className="card-body">
               <h5 className="card-title text-primary h2 p-1">Education</h5>
               <p className="card-text fs-5">
@@ -45,7 +58,11 @@ export default function About({}: Props) {
               </p>
             </div>
           </div>
-          <div className="card w-75 mb-3 p-3">
+          <div
+            className="card w-75 mb-3 p-3"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <div className="card-body">
               <h5 className="card-title text-primary h2 p-1">Skills</h5>
               <p className="card-text fs-5">
@@ -57,7 +74,11 @@ export default function About({}: Props) {
               </p>
             </div>
           </div>
-          <div className="card  w-75 mb-3 p-3 text-end ms-auto d-flex">
+          <div
+            className="card  w-75 mb-3 p-3 text-end ms-auto d-flex"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             <div className="card-body">
               <h5 className="card-title text-primary h2 p-1">
                 Personal Details
